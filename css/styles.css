@@ -231,3 +231,251 @@ h4 {
 #about_text {
     margin-left: 2rem;
 }
+
+/* Contact Section Styling */
+
+.contact_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    max-width: 1120px;
+    margin: 4rem auto 2rem;
+    padding: 0 2rem;
+}
+
+.contact_container h4 {
+    margin: 1rem 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.contact_container {
+    flex-direction: column;
+    margin: 4rem 0 0 0;
+    font-size: 1.25rem;
+}
+
+.contact_container p {
+    display: block;
+    text-align: justify;
+}
+
+/* Styling the Social Media Section */
+
+.social_container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 0 0 0;
+}
+
+.social_icon {
+    width: 4.75rem;
+    height: 4.75rem;
+}
+
+.social_icon:hover {
+    filter: brightness(0) saturate(100%) invert(20%) sepia(24%) saturate(4557%)
+        hue-rotate(242deg) brightness(89%) contrast(108%);
+}
+
+/* Styling the Form Section */
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 7rem 0 0 0;
+    padding: 1.25rem;
+    border: none;
+}
+
+form label {
+    font-size: 1.25rem;
+    text-align: left;
+}
+
+form input,
+textarea {
+    width: 100%;
+    margin: 0.5rem 0 1rem;
+    padding: 0.5rem;
+    border-radius: 20px;
+    border: none;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: none;
+}
+
+form span {
+    margin-bottom: 0.5rem;
+    margin-left: 0.75rem;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    color: red;
+}
+
+/* Footer Section Styling */
+
+footer {
+    margin: 0;
+    padding: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--purple-500);
+    filter: opacity(0.9);
+}
+
+/* Responsive Mode */
+
+/* Smartphone - Screen up to 490px */
+
+@media screen and (max-width: 490px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    main {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+
+    footer {
+        margin-top: auto;
+    }
+
+    /* Menu Adjustments */
+
+    .menu_container {
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    .menu_content {
+        justify-content: center;
+        max-width: 100%;
+        /* padding: 1rem; */
+    }
+
+    #title a {
+        font-size: 1.75rem;
+    }
+
+    .menu_list {
+        display: none;
+    }
+
+    /* Adjustments in the Home Section */
+
+    .home_container {
+        flex-direction: column-reverse;
+        width: 100%;
+        height: auto;
+        margin-top: 2rem;
+    }
+
+    .home_content {
+        width: 100%;
+    }
+
+    .home_content h1 {
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+    }
+
+    .home_content .button,
+    img {
+        width: 80%;
+    }
+
+    /* .home_content img{
+        width: 80%;
+    } */
+
+    #home_text {
+        margin-top: 0.5rem;
+    }
+
+    #home_image {
+        margin-bottom: 0;
+    }
+
+    /* Adjustments in the About Section */
+
+    .about_container {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin-top: 3rem;
+    }
+
+    .about_container img {
+        width: 70%;
+    }
+
+    .about_container h1 {
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+    }
+
+    .about_github {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .about_github p {
+        display: none;
+    }
+
+    .about_github .button {
+        width: 80%;
+    }
+
+    /* Adjustments in the Contact Section */
+
+    .contact_container {
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: auto;
+        margin-top: 2rem;
+        padding: 0 1rem;
+    }
+
+    .contact_content {
+        width: 100%;
+    }
+
+    .contact_content h4 {
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+    }
+
+    .contact_content p {
+        margin: 1rem;
+    }
+
+    /* Adjustments to the Social Media Section */
+
+    .social_container {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .social_icon {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    /* Form Section Adjustments */
+
+    form {
+        margin: 1rem 0 0 0;
+        padding: 1rem;
+    }
+}
