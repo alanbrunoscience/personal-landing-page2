@@ -44,7 +44,6 @@
           </ul>
         </nav>
       </div>
-
     </div>
   </header>
 
@@ -52,10 +51,10 @@
   <main>
 
     <!-- Home Section -->
-    <section id="home">
+    <section id="home" class="flex home_container">
 
       <!-- Home Section Text -->
-      <div id="home_text">
+      <div id="home_text" class="flex home_content">
 
         <h4>Welcome to My New Universe</h4>
         <h2>Different worlds for different people</h2>
@@ -72,14 +71,14 @@
       </div>
 
       <!-- Home Section Image -->
-      <div id="home_image">
+      <div id="home_image" class="flex home_content">
         <img src="./assets/img/astronauta.svg" alt="Animated Astronaut Helmet" />
       </div>
 
     </section>
 
     <!-- About Section -->
-    <section id="about">
+    <section id="about" class="flex about_container">
 
       <!-- About Section Image -->
       <div id="about_image">
@@ -98,7 +97,7 @@
         </p>
 
         <!-- GitHub Details -->
-        <div id="about_github">
+        <div id="about_github" class="flex about_github">
           <a href="https://github.com/alanbrunoscience" target="_blank" class="button">
             GitHub
           </a>
@@ -109,26 +108,28 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="contact_container">
 
-      <h2>Contact Me</h2>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti nam tempora nostrum error velit
-        architecto provident distinctio, quo libero rem rerum beatae laboriosam iusto quod id cumque harum.
-        Repudiandae, nostrum!
-      </p>
+      <div id="social_medias" class="contact_content">
+        <h2>Contact Me</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti nam tempora nostrum error velit
+          architecto provident distinctio, quo libero rem rerum beatae laboriosam iusto quod id cumque harum.
+          Repudiandae, nostrum!
+        </p>
 
-      <!-- Social Midias -->
-      <div id="social_media_icons">
-        <a href="" target="_blank">
-          <img src="./assets/img/linkedin.svg" alt="Linkedin Logo">
-        </a>
-        <a href="" target="_blank">
-          <img src="./assets/img/github.svg" alt="Github Logo">
-        </a>
-        <a href="" target="_blank">
-          <img src="./assets/img/instagram.svg" alt="Instagram Logo">
-        </a>
+        <!-- Social Midias -->
+        <div id="social_media_icons" class="social_container">
+          <a href="" target="_blank">
+            <img src="./assets/img/linkedin.svg" alt="Linkedin Logo">
+          </a>
+          <a href="" target="_blank">
+            <img src="./assets/img/github.svg" alt="Github Logo">
+          </a>
+          <a href="" target="_blank">
+            <img src="./assets/img/instagram.svg" alt="Instagram Logo">
+          </a>
+        </div>
       </div>
 
       <!-- Contact Form -->
@@ -147,10 +148,9 @@
         <span id="txtSubject"></span>
 
         <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Enter the message">
-                </textarea>
+        <textarea id="message" name="message" placeholder="Enter the message"></textarea>
 
-        <button type="submit">Send</button>
+        <button type="submit" class="button">Send</button>
       </form>
 
     </section>

@@ -251,13 +251,13 @@ h4 {
     font-weight: 700;
 }
 
-.contact_container {
+.contact_content {
     flex-direction: column;
     margin: 4rem 0 0 0;
     font-size: 1.25rem;
 }
 
-.contact_container p {
+.contact_content p {
     display: block;
     text-align: justify;
 }
@@ -276,8 +276,15 @@ h4 {
 }
 
 .social_icon:hover {
-    filter: brightness(0) saturate(100%) invert(20%) sepia(24%) saturate(4557%)
-        hue-rotate(242deg) brightness(89%) contrast(108%);
+    filter: 
+        brightness(0)
+        saturate(100%)
+        invert(20%)
+        sepia(24%)
+        saturate(4557%)
+        hue-rotate(242deg)
+        brightness(89%)
+        contrast(108%);
 }
 
 /* Styling the Form Section */
